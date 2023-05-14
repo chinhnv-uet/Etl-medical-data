@@ -8,12 +8,12 @@ Preview schema of database:
 <br>  
 
 ## Data modeling:
-Some fact table and Dimension table:  
+Some Fact table and Dimension table:  
 <center> <img src="img/dataModeling.png" alt= “” width="600" height="value"> </center>
 
 ## Data flow:
 After consider runtime of all tasks, pipeline is constructed as follows:
-<center> <img src="img/flow.png" alt= “” width="500" height="value"> </center>
+<center> <img src="img/flow.png" alt= “” width="700" height="value"> </center>
 
 ## Result of Etl process:
 <center> <img src="img/clh1.png" alt= “” width="600" height="value"> </center>
