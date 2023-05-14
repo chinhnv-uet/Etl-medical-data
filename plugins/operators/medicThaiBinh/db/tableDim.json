@@ -1,0 +1,410 @@
+{
+    "benhnhan": {
+        "sourceName": "p_thongtindieutri_new",
+        "selectCol": [
+            "MaBN",
+            "HoBenhNhan",
+            "ChuLotBenhNhan",
+            "TenBenhNhan",
+            "Tuoi",
+            "NgaySinh",
+            "NamSinh",
+            "DienThoaiDiDong",
+            "SoNha",
+            "QuocTich",
+            "NamSinhBo",
+            "NamSinhMe",
+            "NgayCapCMND"
+        ],
+        "dropDup": [
+            "MaBN"
+        ],
+        "rename": {
+            "MaBN": "MaBenhNhan",
+            "HoBenhNhan": "Ho",
+            "ChuLotBenhNhan": "TenLot",
+            "TenBenhNhan": "Ten",
+            "DienThoaiDiDong": "SDT",
+            "NgayCapCMND": "NgayCapCanCuoc"
+        },
+        "idCol": "IdBenhNhan",
+        "desName": "DIM_BENHNHAN"
+    },
+    "khoa": {
+        "sourceName": "merge_chi_dinh",
+        "selectCol": [
+            "MA_KHOA_CHI_DINH",
+            "TEN_KHOA_CHI_DINH"
+        ],
+        "dropDup": [
+            "TEN_KHOA_CHI_DINH"
+        ],
+        "rename": {
+            "MA_KHOA_CHI_DINH": "MaKhoaPhong",
+            "TEN_KHOA_CHI_DINH": "TenKhoa"
+        },
+        "idCol": "IdKhoa",
+        "desName": "DIM_KHOA"
+    },
+    "phong": {
+        "sourceName": "merge_chi_dinh",
+        "selectCol": [
+            "MA_PHONG_CHI_DINH",
+            "TEN_PHONG_CHI_DINH"
+        ],
+        "dropDup": [
+            "MA_PHONG_CHI_DINH"
+        ],
+        "rename": {
+            "MA_PHONG_CHI_DINH": "MaKhoaPhong",
+            "TEN_PHONG_CHI_DINH": "TenPhong"
+        },
+        "idCol": "IdPhong",
+        "desName": "DIM_PHONG"
+    },
+    "bacsi": {
+        "sourceName": "thongtindichvu",
+        "selectCol": [
+            "MaBacSiChiDinh",
+            "TenBacSiChiDinh"
+        ],
+        "dropDup": [
+            "MaBacSiChiDinh"
+        ],
+        "rename": {
+            "MaBacSiChiDinh": "MaBacSi",
+            "TenBacSiChiDinh": "HoTenBacSi"
+        },
+        "idCol": "IdBacSi",
+        "desName": "DIM_BACSI"
+    },
+    "benhvien": {
+        "sourceName": "HoaDon",
+        "selectCol": [
+            "MaCSKCB",
+            "TenCSKCB"
+        ],
+        "dropDup": [
+            "MaCSKCB",
+            "TenCSKCB"
+        ],
+        "rename": {},
+        "idCol": "IdCSKCB",
+        "desName": "DIM_CSKCB"
+    },
+    "dichvu": {
+        "sourceName": "thongtindichvu",
+        "selectCol": [
+            "MaDichVu",
+            "TenDichVu"
+        ],
+        "dropDup": [
+            "TenDichVu"
+        ],
+        "rename": {},
+        "idCol": "IdDichVu",
+        "desName": "DIM_DICHVU"
+    },
+    "gioitinh": {
+        "sourceName": "p_thongtindieutri_new",
+        "selectCol": [
+            "GioiTinh"
+        ],
+        "dropDup": [
+            "GioiTinh"
+        ],
+        "rename": {},
+        "idCol": "IdGioiTinh",
+        "desName": "DIM_GIOITINH"
+    },
+    "loaiba": {
+        "sourceName": "p_thongtindieutri_new",
+        "selectCol": [
+            "LoaiBenhAn"
+        ],
+        "dropDup": [
+            "LoaiBenhAn"
+        ],
+        "rename": {
+            "LoaiBenhAn": "TenLoaiBenhAn"
+        },
+        "idCol": "IdLoaiBenhAn",
+        "desName": "DIM_LOAIBENHAN"
+    },
+    "loaiphieuthu": {
+        "sourceName": "HoaDon",
+        "selectCol": [
+            "MaLoaiPhieuThu",
+            "LoaiPhieuThu"
+        ],
+        "dropDup": [
+            "LoaiPhieuThu"
+        ],
+        "rename": {
+            "LoaiPhieuThu": "TenLoaiPhieuThu"
+        },
+        "idCol": "IdLoaiPhieuThu",
+        "desName": "DIM_LOAIPHIEUTHU"
+    },
+    "hoatchat": {
+        "sourceName": "ChiDinhDichVu",
+        "selectCol": [
+            "MaHoatChat",
+            "TenHoatChat"
+        ],
+        "dropDup": [
+            "TenHoatChat"
+        ],
+        "rename": {},
+        "idCol": "IdHoatChat",
+        "desName": "DIM_HOATCHAT"
+    },
+    "dantoc": {
+        "sourceName": "p_thongtindieutri_new",
+        "selectCol": [
+            "TenDanToc"
+        ],
+        "dropDup": [
+            "TenDanToc"
+        ],
+        "rename": {
+            "TenDanToc": "DanToc"
+        },
+        "idCol": "IdDanToc",
+        "desName": "DIM_DANTOC"
+    },
+    "loaidichvu": {
+        "sourceName": "thongtindichvu",
+        "selectCol": [
+            "TenLoaiDichVu", "MaLoaiDichVu"
+        ],
+        "dropDup": [
+            "TenLoaiDichVu"
+        ],
+        "rename": {},
+        "idCol": "IdLoaiDichVu",
+        "desName": "DIM_LOAIDICHVU"
+    },
+    "loaipttt": {
+        "sourceName": "thongtinpttt",
+        "selectCol": [
+            "MaLoaiPTTT",
+            "LoaiPTTT"
+        ],
+        "dropDup": [
+            "LoaiPTTT"
+        ],
+        "rename": {},
+        "idCol": "IdLoaiPTTT",
+        "desName": "DIM_LOAIPTTT"
+    },
+    "hinhthuctt": {
+        "sourceName": "HoaDon",
+        "selectCol": [
+            "MaHinhThucThanhToan",
+            "HinhThucThanhToan"
+        ],
+        "dropDup": [
+            "HinhThucThanhToan"
+        ],
+        "rename": {
+            "MaHinhThucThanhToan": "MaHinhThucTT",
+            "HinhThucThanhToan": "HinhThucTT"
+        },
+        "idCol": "IdHinhThucTT",
+        "desName": "DIM_HINHTHUCTT"
+    },
+    "doituongtt": {
+        "sourceName": "merge_chi_dinh",
+        "selectCol": [
+            "MA_DOI_TUONG_THANH_TOAN",
+            "TEN_DOI_TUONG_THANH_TOAN"
+        ],
+        "dropDup": [
+            "TEN_DOI_TUONG_THANH_TOAN"
+        ],
+        "rename": {
+            "MA_DOI_TUONG_THANH_TOAN": "MaDoiTuongTT",
+            "TEN_DOI_TUONG_THANH_TOAN": "DoiTuongTT"
+        },
+        "idCol": "IdDoiTuongTT",
+        "desName": "DIM_DOITUONGTT"
+    },
+    "donvitinh": {
+        "sourceName": "ChiDinhDichVu",
+        "selectCol": [
+            "DVT"
+        ],
+        "dropDup": [
+            "DVT"
+        ],
+        "rename": {
+            "DVT": "DonViTinh"
+        },
+        "idCol": "IdDonViTinh",
+        "desName": "DIM_DONVITINH"
+    },
+    "nhomdichvu": {
+        "sourceName": "merge_chi_dinh",
+        "selectCol": [
+            "TEN_NHOM_DICH_VU"
+        ],
+        "dropDup": [
+            "TEN_NHOM_DICH_VU"
+        ],
+        "rename": {
+            "TEN_NHOM_DICH_VU": "NhomDichVu"
+        },
+        "idCol": "IdNhomDichVu",
+        "desName": "DIM_NHOMDICHVU"
+    },
+    "trangthai": {
+        "sourceName": "ChiDinhDichVu",
+        "selectCol": [
+            "TrangThai"
+        ],
+        "dropDup": [
+            "TrangThai"
+        ],
+        "rename": {
+            "TrangThai": "TenTrangThai"
+        },
+        "idCol": "IdTrangThai",
+        "desName": "DIM_TRANGTHAI"
+    },
+    "xutrikhambenh": {
+        "sourceName": "p_thongtindieutri_new",
+        "selectCol": [
+            "XuTriKhamBenh"
+        ],
+        "dropDup": [
+            "XuTriKhamBenh"
+        ],
+        "rename": {},
+        "idCol": "IdXuTriKhamBenh",
+        "desName": "DIM_XUTRIKHAMBENH"
+    },
+    "hinhthucravien": {
+        "sourceName": "p_thongtindieutri_new",
+        "selectCol": [
+            "HinhThucRaVien"
+        ],
+        "dropDup": [
+            "HinhThucRaVien"
+        ],
+        "rename": {
+            "HinhThucRaVien": "TenHinhThucRaVien"
+        },
+        "idCol": "IdHinhThucRaVien",
+        "desName": "DIM_HINHTHUCRAVIEN"
+    },
+    "phuongxa": {
+        "sourceName": "ChiDinhDichVu",
+        "selectCol": [
+            "MaPhuongXa",
+            "TenPhuongXa"
+        ],
+        "dropDup": [
+            "TenPhuongXa"
+        ],
+        "rename": {},
+        "idCol": "IdPhuongXa",
+        "desName": "DIM_PHUONGXA"
+    },
+    "quanhuyen": {
+        "sourceName": "ChiDinhDichVu",
+        "selectCol": [
+            "MaQuanHuyen",
+            "TenQuanHuyen"
+        ],
+        "dropDup": [
+            "MaQuanHuyen"
+        ],
+        "rename": {},
+        "idCol": "IdQuanHuyen",
+        "desName": "DIM_QUANHUYEN"
+    },
+    "nghenghiep": {
+        "sourceName": "p_thongtindieutri_new",
+        "selectCol": [
+            "MaNgheNghiep",
+            "TenNgheNghiep"
+        ],
+        "dropDup": [
+            "TenNgheNghiep"
+        ],
+        "rename": {
+            "TenNgheNghiep": "NgheNghiep"
+        },
+        "idCol": "IdNgheNghiep",
+        "desName": "DIM_NGHENGHIEP"
+    },
+    "dtvv": {
+        "sourceName": "thongtindieutri_1",
+        "selectCol": [
+            "DoiTuongVaoVien"
+        ],
+        "dropDup": [
+            "DoiTuongVaoVien"
+        ],
+        "rename": {
+            "DoiTuongVaoVien": "TenDoiTuongVaoVien"
+        },
+        "idCol": "IdDoiTuongVaoVien",
+        "desName": "DIM_DOITUONGVAOVIEN"
+    },
+    "benhrakhoa": {
+        "colExplore": [
+            "DieuTriKhoa"
+        ],
+        "newColExplore": [
+            "Khoa"
+        ],
+        "sourceName": "p_thongtindieutri_new",
+        "selectCol": [
+            "Khoa.BenhChinhRaKhoa"
+        ],
+        "dropDup": [
+            "BenhChinhRaKhoa"
+        ],
+        "rename": {
+            "BenhChinhRaKhoa": "TenBenhChinhRaKhoa"
+        },
+        "idCol": "IdBenhChinhRaKhoa",
+        "desName": "DIM_BENHCHINHRAKHOA"
+    },
+    "benhvaokhoa": {
+        "colExplore": [
+            "DieuTriKhoa"
+        ],
+        "newColExplore": [
+            "Khoa"
+        ],
+        "sourceName": "p_thongtindieutri_new",
+        "selectCol": [
+            "Khoa.BenhChinhVaoKhoa"
+        ],
+        "dropDup": [
+            "BenhChinhVaoKhoa"
+        ],
+        "rename": {
+            "BenhChinhVaoKhoa": "TenBenhChinhVaoKhoa"
+        },
+        "idCol": "IdBenhChinhVaoKhoa",
+        "desName": "DIM_BENHCHINHVAOKHOA"
+    },
+    "benhravien": {
+        "sourceName": "p_thongtindieutri_new",
+        "selectCol": [
+            "BenhChinhRaVien"
+        ],
+        "dropDup": [
+            "BenhChinhRaVien"
+        ],
+        "rename": {
+            "BenhChinhRaVien": "TenBenhChinhRaVien"
+        },
+        "idCol": "IdBenhChinhRaVien",
+        "desName": "DIM_BENHCHINHRAVIEN"
+    }
+}

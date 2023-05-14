@@ -1,0 +1,4 @@
+{
+    "mongoTb": {"host": "10.56.10.100", "port": "27018", "usr": "root", "pwd": "89Oc6q5!tFNEXYQO", "db": "thaibinh"},
+    "clhTb": {"host": "10.56.10.78", "port": "8123", "usr": "", "pwd": "", "db": "MEDIC_THAIBINH_DWH"}
+}

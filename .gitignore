@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Airflow
+logs/*
+example_dags/
+airflow-webserver*
+airflow-scheduler*
+airflow.cfg
+airflow.db
+webserver_config.py
+setup.py
+standalone_admin_password.txt
